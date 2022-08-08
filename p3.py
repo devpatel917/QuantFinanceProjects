@@ -3,7 +3,6 @@ import numpy as np
 from scipy.stats import norm
 import scipy.stats as stats
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 def black_scholes(S, K, r, t, v):
     d1 = (np.log(S/K) + ((r + (v**2/2))*t))/(v*t**0.5)
